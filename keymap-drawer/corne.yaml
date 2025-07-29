@@ -1,0 +1,309 @@
+layout: {zmk_keyboard: corne}
+layers:
+  default:
+  - {t: TAB, h: ESCAPE}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: ':', h: ;}
+  - Ctl+BACKSPACE
+  - ''''
+  - A
+  - R
+  - {t: S, h: LEFT SHIFT}
+  - T
+  - G
+  - M
+  - N
+  - {t: E, h: RIGHT SHIFT}
+  - I
+  - O
+  - ''''
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - {t: /, h: \}
+  - RIGHT SHIFT
+  - LEFT GUI
+  - '1'
+  - {t: SPACE, h: LEFT SHIFT}
+  - {t: ENTER, h: RIGHT SHIFT}
+  - '2'
+  - LCTRL
+  '1':
+  - {t: ▽, type: trans}
+  - '&comp_euro'
+  - $
+  - '&'
+  - '%'
+  - {t: ▽, type: trans}
+  - '~'
+  - +
+  - '['
+  - ']'
+  - \
+  - BACKSPACE
+  - {t: '&fcb_single', h: '&fcb_full'}
+  - '@'
+  - '#'
+  - '!'
+  - '?'
+  - {t: underscore_space, h: toggle}
+  - {t: '-', h: '&comp_emdash'}
+  - {t: '=', h: _}
+  - (
+  - )
+  - /
+  - {t: '`', h: '&scl'}
+  - {t: ▽, type: trans}
+  - '&save'
+  - CUT
+  - COPY
+  - PASTE
+  - CAPSLOCK
+  - ^
+  - '*'
+  - '{'
+  - '}'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: BACKSPACE, h: Ctl+BACKSPACE}
+  - '3'
+  - {t: ▽, type: trans}
+  '2':
+  - ESCAPE
+  - '&comp_degree'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PRINTSCREEN
+  - '&comp_o_a'
+  - '&comp_uml_a'
+  - '&comp_uml_o'
+  - {t: DELETE, h: Ctl+DELETE}
+  - BSPC
+  - LCTRL
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - HOME
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - END
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - INSERT
+  - BACK
+  - PAGE DOWN
+  - PG UP
+  - FORWARD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '3'
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  '3':
+  - ESCAPE
+  - {t: ▽, type: trans}
+  - Meh+F2
+  - Meh+F3
+  - POWER
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp RCLK'
+  - F11
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - PLAY PAUSE
+  - PREV
+  - VOLUME DOWN
+  - VOLUME UP
+  - NEXT
+  - MUTE
+  - F12
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - {t: '&desktop_pin', h: '&desktop_pswd'}
+  - {t: '&laptop_pin', h: '&laptop_pswd'}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  underscore_space:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: _, h: LEFT SHIFT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  qwerty:
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: A, h: LGUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT SHIFT}
+  - {t: F, h: LCTRL}
+  - G
+  - H
+  - {t: J, h: RCTRL}
+  - {t: K, h: RIGHT SHIFT}
+  - {t: L, h: LEFT ALT}
+  - {t: ':', h: ;}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [12, 23]
+  k: {t: qwerty, h: toggle}
+  l: [qwerty, default]
+- p: [9, 22]
+  k: '&you'
+  l: [default]
+- p: [3, 4]
+  k: BACKSPACE
+  l: [default]
+- p: [15, 16]
+  k: Ctl+BACKSPACE
+  l: [default]
+- p: [32, 31]
+  k: _
+  l: ['1', default]
+- p: [20, 19]
+  k: '-'
+  l: ['1', default]
+- p: [8, 7]
+  k: '&comp_emdash'
+  l: [default, '1']
+- p: [25, 26]
+  k: Ctl+Z
+  l: [default]
+- p: [21, 20]
+  k: '&arb'
+  l: [default, '1']
+- p: [8, 9]
+  k: '&asb'
+  l: [default, '1']
+- p: [32, 33]
+  k: '&acb'
+  l: [default, '1']
+- p: [32, 33, 34]
+  k: '&aab'
+  l: [default]
+- p: [34, 35]
+  k: '&pswd'
+  l: ['3']
+- p: [14, 15]
+  k: Ctl+W
+  l: [default]
+- p: [13, 14]
+  k: ESCAPE
+  l: [default]
+- p: [27, 28]
+  k: '&save'
+  l: [default]
