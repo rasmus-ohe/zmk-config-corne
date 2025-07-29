@@ -27,7 +27,7 @@
         fcb_full: fcb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp SQT &kp SQT &kp LS(ENTER) &kp LS(ENTER) &kp SQT &kp SQT &kp SQT &kp UP_ARROW>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LS(ENTER) &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE &kp UP_ARROW>;
             label = "Fenced Code Block - Full";
         };
 
@@ -55,7 +55,7 @@
         pswd: pswd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &compk &kp DQT &kp A &compk &kp DQT &kp A &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
+            bindings = <&kp LS(T) &kp RIGHT_ALT &kp DQT &kp A &kp RIGHT_ALT &kp DQT &kp A &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
             label = "PSWD";
         };
 
@@ -275,7 +275,7 @@
 
         you_combo {
             bindings = <&you>;
-            key-positions = <9 10>;
+            key-positions = <9 22>;
             layers = <0>;
         };
 
@@ -335,7 +335,7 @@
 
         auto_angled_brackets {
             bindings = <&aab>;
-            key-positions = <32 33 24>;
+            key-positions = <32 33 34>;
             layers = <0>;
         };
 
@@ -344,6 +344,18 @@
             key-positions = <34 35>;
             layers = <3>;
         };
+
+        terminal_full_backspace {
+            bindings = <&kp LC(W)>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -351,10 +363,10 @@
 
         default_layer {
             bindings = <
-&ht_kp ESCAPE TAB  &kp Q            &kp W            &kp F              &kp P         &kp B                          &kp J                         &kp L         &kp U               &kp Y            &ht_kp SEMICOLON COLON  &kp LC(BACKSPACE)
-&kp SQT            &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G                          &kp M                         &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O        &kp SQT
-&kp LEFT_SHIFT     &kp Z            &kp X            &kp C              &kp D         &kp V                          &kp K                         &kp H         &kp COMMA           &kp DOT          &kp FSLH                &kp RIGHT_SHIFT
-                                                     &kp LEFT_GUI       &mo 1         &ht_kp_hwu LEFT_SHIFT SPACE    &ht_kp_hwu RIGHT_SHIFT ENTER  &mo 2         &kp LCTRL
+&ht_kp ESCAPE TAB  &kp Q  &kp W  &kp F              &kp P  &kp B                          &kp J                         &kp L  &kp U               &kp Y    &ht_kp SEMICOLON COLON  &kp LC(BACKSPACE)
+&kp SQT            &kp A  &kp R  &hml LEFT_SHIFT S  &kp T  &kp G                          &kp M                         &kp N  &hmr RIGHT_SHIFT E  &kp I    &kp O                   &kp SQT
+&kp LEFT_SHIFT     &kp Z  &kp X  &kp C              &kp D  &kp V                          &kp K                         &kp H  &kp COMMA           &kp DOT  &ht_kp BACKSLASH SLASH  &kp RIGHT_SHIFT
+                                 &kp LEFT_GUI       &mo 1  &ht_kp_hwu LEFT_SHIFT SPACE    &ht_kp_hwu RIGHT_SHIFT ENTER  &mo 2  &kp LCTRL
             >;
         };
 
