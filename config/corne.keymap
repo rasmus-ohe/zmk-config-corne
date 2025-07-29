@@ -218,7 +218,7 @@
 
         toggle_qwerty {
             bindings = <&tog 5>;
-            key-positions = <24 35>;
+            key-positions = <12 23>;
         };
     };
 
