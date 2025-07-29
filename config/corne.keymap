@@ -93,6 +93,27 @@
             bindings = <&kp LC(S)>;
             label = "SAVE";
         };
+
+        comp_euro: comp_euro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp EQUAL &kp C>;
+            label = "COMP_EURO";
+        };
+
+        comp_degree: comp_degree {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp O &kp O>;
+            label = "COMP_DEGREE";
+        };
+
+        comp_emdash: comp_emdash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp MINUS &kp MINUS &kp MINUS>;
+            label = "COMP_EMDASH";
+        };
     };
 
     behaviors {
@@ -181,12 +202,21 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 36 37 38>;
         };
+
+        ht_kp_em: ht_kp_em {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Tap - Key Press - Em dash";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&comp_emdash>, <&kp>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        toggle_colemak {
+        toggle_qwerty {
             bindings = <&tog 5>;
             key-positions = <24 35>;
         };
@@ -206,8 +236,8 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE     &trans       &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
-&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4          &kp MINUS                       &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp GRAVE
+&kp ESCAPE     &comp_euro   &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
+&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4          &ht_kp_em 0 MINUS               &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp GRAVE
 &trans         &save        &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
                                         &trans           &trans        &trans          &ht_kp LC(BACKSPACE) BACKSPACE  &mo 3                    &trans
             >;
@@ -221,10 +251,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans          &kp PRINTSCREEN  &comp_o_a   &comp_uml_a    &comp_uml_o  &ht_kp LC(DELETE) DELETE  &kp BSPC
-&kp LCTRL   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp HOME         &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT                 &kp END
-&trans      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0          &kp INSERT       &kp K_BACK  &kp PAGE_DOWN  &kp PG_UP    &kp K_FORWARD             &trans
-                            &trans  &mo 3   &kp LEFT_ALT    &trans           &trans      &trans
+&kp ESCAPE  &comp_degree  &trans  &trans  &trans  &trans          &kp PRINTSCREEN  &comp_o_a   &comp_uml_a    &comp_uml_o  &ht_kp LC(DELETE) DELETE  &kp BSPC
+&kp LCTRL   &kp N1        &kp N2  &kp N3  &kp N4  &kp N5          &kp HOME         &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT                 &kp END
+&trans      &kp N6        &kp N7  &kp N8  &kp N9  &kp N0          &kp INSERT       &kp K_BACK  &kp PAGE_DOWN  &kp PG_UP    &kp K_FORWARD             &trans
+                                  &trans  &mo 3   &kp LEFT_ALT    &trans           &trans      &trans
             >;
         };
 
