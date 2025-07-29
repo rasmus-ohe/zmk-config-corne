@@ -55,7 +55,7 @@
         pswd: pswd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &comp_uml_a &comp_uml_a &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
+            bindings = <&kp LS(T) &compk &kp DQT &kp A &compk &kp DQT &kp A &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
             label = "PSWD";
         };
 
