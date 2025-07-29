@@ -1,0 +1,31 @@
+name: Generate Keymap Drawing
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'config/*.keymap', 'keymap_drawer.config.yaml' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Install keymap-drawer
+        run: pipx install keymap-drawer  # or `pip install keymap-drawer`
+      - name: Parse ZMK keymaps
+        run: keymap parse -c 10 -z config/*.keymap -o keymap-drawer/parsed.yaml  # ZMK parse :contentReference[oaicite:9]{index=9}
+      - name: Draw SVGs
+        run: |
+          mkdir -p keymap-drawer/svg
+          keymap draw -i keymap-drawer/parsed.yaml -o keymap-drawer/svg/mykbd.svg
+      - name: Commit generated diagrams
+        uses: stefanzweifel/git-auto-commit-action@v6  # auto-commit changed SVGs :contentReference[oaicite:10]{index=10}
+        with:
+          commit_message: "chore: update keymap drawings"
