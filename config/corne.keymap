@@ -27,7 +27,7 @@
         fcb_full: fcb {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LS(ENTER) &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE &kp UP_ARROW>;
+            bindings = <&fcb_single &kp LS(ENTER) &kp LS(ENTER) &fcb_single &kp UP_ARROW>;
             label = "Fenced Code Block - Full";
         };
 
@@ -55,8 +55,43 @@
         pswd: pswd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp SQT &kp SQT &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
+            bindings = <&kp LS(T) &comp_uml_a &comp_uml_a &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
             label = "PSWD";
+        };
+
+        comp_o_a: comp_o_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp O &kp A>;
+            label = "COMPOSE_O_A";
+        };
+
+        comp_uml_a: comp_uml_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp DOUBLE_QUOTES &kp A>;
+            label = "COMPOSE_UMLAUT_A";
+        };
+
+        comp_uml_o: comp_uml_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&compk &kp DOUBLE_QUOTES &kp O>;
+            label = "COMPOSE_UMLAUT_O";
+        };
+
+        compk: compk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT>;
+            label = "COMPOSE_KEY";
+        };
+
+        save: save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S)>;
+            label = "SAVE";
         };
     };
 
@@ -164,17 +199,17 @@
             bindings = <
 &ht_kp ESCAPE TAB  &kp Q            &kp W            &kp F              &kp P         &kp B                          &kp J                         &kp L         &kp U               &kp Y            &ht_kp SEMICOLON COLON  &kp LC(BACKSPACE)
 &kp SQT            &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_SHIFT S  &hml LCTRL T  &kp G                          &kp M                         &hmr RCTRL N  &hmr RIGHT_SHIFT E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O        &kp SQT
-&scw               &kp Z            &kp X            &kp C              &kp D         &kp V                          &kp K                         &kp H         &kp COMMA           &kp DOT          &kp FSLH                &scw
+&kp LEFT_SHIFT     &kp Z            &kp X            &kp C              &kp D         &kp V                          &kp K                         &kp H         &kp COMMA           &kp DOT          &kp FSLH                &kp RIGHT_SHIFT
                                                      &kp LEFT_GUI       &mo 1         &ht_kp_hwu LEFT_SHIFT SPACE    &ht_kp_hwu RIGHT_SHIFT ENTER  &mo 2         &kp LCTRL
             >;
         };
 
         layer_1 {
             bindings = <
-&kp ESCAPE     &trans       &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans    &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
-&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4    &kp MINUS                       &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp GRAVE
-&trans         &trans       &kp K_CUT   &kp K_COPY       &kp K_PASTE   &trans    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
-                                        &trans           &trans        &trans    &ht_kp LC(BACKSPACE) BACKSPACE  &mo 3                    &trans
+&kp ESCAPE     &trans       &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
+&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4          &kp MINUS                       &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp GRAVE
+&trans         &save        &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
+                                        &trans           &trans        &trans          &ht_kp LC(BACKSPACE) BACKSPACE  &mo 3                    &trans
             >;
         };
 
@@ -186,9 +221,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans          &kp PRINTSCREEN  &trans      &trans         &trans     &ht_kp LC(DELETE) DELETE  &kp BSPC
-&kp LCTRL   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp HOME         &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT                 &kp END
-&trans      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0          &kp INSERT       &kp K_BACK  &kp PAGE_DOWN  &kp PG_UP  &kp K_FORWARD             &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans          &kp PRINTSCREEN  &comp_o_a   &comp_uml_a    &comp_uml_o  &ht_kp LC(DELETE) DELETE  &kp BSPC
+&kp LCTRL   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp HOME         &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT                 &kp END
+&trans      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0          &kp INSERT       &kp K_BACK  &kp PAGE_DOWN  &kp PG_UP    &kp K_FORWARD             &trans
                             &trans  &mo 3   &kp LEFT_ALT    &trans           &trans      &trans
             >;
         };
@@ -197,7 +232,7 @@
             bindings = <
 &kp ESCAPE  &trans  &kp LS(LC(LA(F2)))  &kp LA(LS(LC(F3)))  &kp K_POWER  &trans     &mkp LCLK         &mmv MOVE_LEFT  &mmv MOVE_DOWN        &mmv MOVE_UP          &mmv MOVE_RIGHT       &mkp RCLK
 &kp F11     &kp F1  &kp F2              &kp F3              &kp F4       &kp F5     &kp C_PLAY_PAUSE  &kp C_PREV      &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT            &kp K_MUTE
-&kp F12     &kp F6  &kp F7              &kp F8              &kp F9       &kp F10    &trans            &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &desktop_secrets 0 0  &laptop_secrets 0 0
+&kp F12     &kp F6  &kp F7              &kp F8              &kp F9       &kp F10    &pswd             &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &desktop_secrets 0 0  &laptop_secrets 0 0
                                         &trans              &trans       &trans     &trans            &trans          &trans
             >;
         };
