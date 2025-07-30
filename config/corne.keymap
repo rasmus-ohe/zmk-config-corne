@@ -281,7 +281,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <3 4>;
+            key-positions = <15 17>;
             layers = <0>;
         };
 
@@ -297,16 +297,10 @@
             layers = <1 0>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
+        ht_kp-minus-em_dash {
+            bindings = <&ht_kp_em 0 MINUS>;
             key-positions = <20 19>;
             layers = <1 0>;
-        };
-
-        em_dash {
-            bindings = <&comp_emdash>;
-            key-positions = <8 7>;
-            layers = <0 1>;
         };
 
         undo {
@@ -347,7 +341,7 @@
 
         terminal_full_backspace {
             bindings = <&kp LC(W)>;
-            key-positions = <14 15>;
+            key-positions = <28 27>;
             layers = <0>;
         };
 
@@ -359,13 +353,19 @@
 
         save {
             bindings = <&save>;
-            key-positions = <27 28>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
         select_all {
             bindings = <&kp LC(A)>;
             key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
             layers = <0>;
         };
     };
