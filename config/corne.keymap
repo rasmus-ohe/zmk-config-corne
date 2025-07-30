@@ -87,13 +87,6 @@
             label = "COMPOSE_KEY";
         };
 
-        save: save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(S)>;
-            label = "SAVE";
-        };
-
         comp_euro: comp_euro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -294,13 +287,13 @@
         underscore {
             bindings = <&kp UNDER>;
             key-positions = <32 31>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         ht_kp-minus-em_dash {
             bindings = <&ht_kp_em 0 MINUS>;
             key-positions = <20 19>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         undo {
@@ -312,19 +305,19 @@
         auto_round_brackets {
             bindings = <&arb>;
             key-positions = <21 20>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         auto_scuare_brackets {
             bindings = <&asb>;
             key-positions = <8 9>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         auto_curly_brackets {
             bindings = <&acb>;
             key-positions = <32 33>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         auto_angled_brackets {
@@ -339,7 +332,7 @@
             layers = <3>;
         };
 
-        terminal_full_backspace {
+        ctrl_w {
             bindings = <&kp LC(W)>;
             key-positions = <28 27>;
             layers = <0>;
@@ -352,7 +345,7 @@
         };
 
         save {
-            bindings = <&save>;
+            bindings = <&kp LC(S)>;
             key-positions = <14 15>;
             layers = <0>;
         };
@@ -374,6 +367,12 @@
             key-positions = <9 10>;
             layers = <0>;
         };
+
+        stop_command {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -383,7 +382,7 @@
             bindings = <
 &ht_kp ESCAPE TAB  &kp Q  &kp W  &kp F              &kp P  &kp B                          &kp J                         &kp L  &kp U               &kp Y    &ht_kp SEMICOLON COLON  &kp LC(BACKSPACE)
 &kp SQT            &kp A  &kp R  &hml LEFT_SHIFT S  &kp T  &kp G                          &kp M                         &kp N  &hmr RIGHT_SHIFT E  &kp I    &kp O                   &kp SQT
-&kp LEFT_SHIFT     &kp Z  &kp X  &kp C              &kp D  &kp V                          &kp K                         &kp H  &kp COMMA           &kp DOT  &ht_kp BACKSLASH SLASH  &kp RIGHT_SHIFT
+&scw               &kp Z  &kp X  &kp C              &kp D  &kp V                          &kp K                         &kp H  &kp COMMA           &kp DOT  &ht_kp BACKSLASH SLASH  &scw
                                  &kp LEFT_GUI       &mo 1  &ht_kp_hwu LEFT_SHIFT SPACE    &ht_kp_hwu RIGHT_SHIFT ENTER  &mo 2  &kp LCTRL
             >;
         };
@@ -392,7 +391,7 @@
             bindings = <
 &trans         &comp_euro   &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
 &auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4          &ht_kp_em 0 MINUS               &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &st_kp_scl 0 GRAVE
-&trans         &save        &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
+&trans         &trans       &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
                                         &trans           &trans        &trans          &ht_kp LC(BACKSPACE) BACKSPACE  &mo 3                    &trans
             >;
         };
