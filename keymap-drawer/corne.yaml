@@ -310,3 +310,6 @@ combos:
 - p: [2, 3]
   k: TAB
   l: [default]
+- p: [9, 10]
+  k: DELETE
+  l: [default]
