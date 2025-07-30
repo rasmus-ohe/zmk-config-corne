@@ -265,7 +265,7 @@ combos:
 - p: [9, 22]
   k: '&you'
   l: [default]
-- p: [3, 4]
+- p: [15, 17]
   k: BACKSPACE
   l: [default]
 - p: [15, 16]
@@ -275,11 +275,8 @@ combos:
   k: _
   l: ['1', default]
 - p: [20, 19]
-  k: '-'
+  k: {t: '-', h: '&comp_emdash'}
   l: ['1', default]
-- p: [8, 7]
-  k: '&comp_emdash'
-  l: [default, '1']
 - p: [25, 26]
   k: Ctl+Z
   l: [default]
@@ -298,15 +295,18 @@ combos:
 - p: [34, 35]
   k: '&pswd'
   l: ['3']
-- p: [14, 15]
+- p: [28, 27]
   k: Ctl+W
   l: [default]
 - p: [2, 1]
   k: ESCAPE
   l: [default]
-- p: [27, 28]
+- p: [14, 15]
   k: '&save'
   l: [default]
 - p: [13, 14]
   k: Ctl+A
+  l: [default]
+- p: [2, 3]
+  k: TAB
   l: [default]
