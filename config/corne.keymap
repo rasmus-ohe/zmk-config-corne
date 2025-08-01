@@ -55,7 +55,7 @@
         pswd: pswd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp C_MENU &kp DQT &kp A &kp C_MENU &kp DQT &kp A &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
+            bindings = <&kp LS(T) &kp K_MENU &kp DQT &kp A &kp K_MENU &kp DQT &kp A &kp N0 &kp N &kp LS(M) &kp U &kp N &kp LS(M) &kp AT &kp S &kp T &kp E &kp R &kp N1 &kp AT &kp V &kp AT &kp N1 &kp N>;
             label = "PSWD";
         };
 
@@ -83,7 +83,7 @@
         compk: compk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_MENU>;
+            bindings = <&kp K_MENU>;
             label = "COMPOSE_KEY";
         };
 
