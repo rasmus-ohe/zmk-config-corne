@@ -298,7 +298,7 @@ combos:
 - p: [28, 27]
   k: Ctl+W
   l: [default]
-- p: [2, 1]
+- p: [4, 3]
   k: ESCAPE
   l: [default]
 - p: [14, 15]
