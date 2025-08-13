@@ -398,6 +398,7 @@
         toggle_layer4 {
             bindings = <&tog 4>;
             key-positions = <38 28>;
+            layers = <1>;
         };
     };
 
