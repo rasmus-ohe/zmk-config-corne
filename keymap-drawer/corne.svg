@@ -393,14 +393,39 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="32" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-16">
-<path d="M588,91 l-37,5" class="combo"/>
-<path d="M588,91 l37,-5" class="combo"/>
-<rect rx="6" ry="6" x="574" y="78" width="28" height="26" class="combo"/>
-<text x="588" y="91" class="combo tap">DELETE</text>
-</g>
-<g class="combo combopos-17">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <text x="168" y="144" class="combo tap">Ctl+C</text>
+</g>
+<g class="combo combopos-17">
+<rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
+<text x="224" y="116" class="combo tap">LCTRL</text>
+</g>
+<g class="combo combopos-18">
+<rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
+<text x="224" y="116" class="combo tap">
+<tspan x="224" dy="-0.6em">LEFT</tspan><tspan x="224" dy="1.2em">ALT</tspan>
+</text>
+<text x="224" y="126" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-19">
+<path d="M302,186 l35,27" class="combo"/>
+<path d="M302,186 l-35,-27" class="combo"/>
+<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
+<a href="#underscore_space">
+<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
+</a><text x="302" y="197" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-20">
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-21">
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -580,23 +605,16 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
-<text x="224" y="116" class="combo tap">LCTRL</text>
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="102" width="28" height="26" class="combo"/>
-<text x="224" y="116" class="combo tap">
-<tspan x="224" dy="-0.6em">LEFT</tspan><tspan x="224" dy="1.2em">ALT</tspan>
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
 </text>
-<text x="224" y="126" class="combo hold">sticky</text>
-</g>
-<g class="combo combopos-2">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -780,6 +798,18 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-1">
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -980,6 +1010,18 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">&amp;pswd</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-2">
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-underscore_space">
@@ -1153,6 +1195,26 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M302,186 l35,27" class="combo"/>
+<path d="M302,186 l-35,-27" class="combo"/>
+<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
+<a href="#underscore_space">
+<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
+</a><text x="302" y="197" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-2">
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1342,6 +1404,18 @@ path.combo { stroke: #7f7f7f; }
 <a href="#qwerty">
 <text x="420" y="105" class="combo tap layer-activator">qwerty</text>
 </a><text x="420" y="116" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="210" y="46" width="28" height="26" class="combo"/>
+<text x="224" y="60" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-2">
+<path d="M252,63 l-39,14" class="combo"/>
+<path d="M252,63 l39,-14" class="combo"/>
+<rect rx="6" ry="6" x="238" y="50" width="28" height="26" class="combo"/>
+<text x="252" y="63" class="combo tap">
+<tspan x="252" dy="-0.6em">Ctl+</tspan><tspan x="252" dy="1.2em">DELETE</tspan>
+</text>
 </g>
 </g>
 </g>

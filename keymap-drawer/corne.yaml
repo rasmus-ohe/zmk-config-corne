@@ -310,18 +310,19 @@ combos:
 - p: [2, 3]
   k: TAB
   l: [default]
-- p: [18, 20]
-  k: DELETE
-  l: [default]
 - p: [26, 27]
   k: Ctl+C
   l: [default]
 - p: [16, 27]
   k: LCTRL
-  l: ['1']
+  l: [default]
 - p: [15, 28]
   k: {t: LEFT ALT, h: sticky}
-  l: ['1']
+  l: [default]
 - p: [38, 28]
   k: {t: underscore_space, h: toggle}
-  l: ['1']
+  l: [default, underscore_space]
+- p: [15, 4]
+  k: DELETE
+- p: [15, 5]
+  k: Ctl+DELETE
