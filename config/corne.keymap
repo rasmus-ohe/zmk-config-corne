@@ -255,6 +255,15 @@
             flavor = "hold-preferred";
             bindings = <&scl>, <&kp>;
         };
+
+        lsk: lsk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "Lazy Sticky Key";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            lazy;
+            release-after-ms = <2000>;
+        };
     };
 
     combos {
@@ -364,7 +373,7 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <9 10>;
+            key-positions = <18 20>;
             layers = <0>;
         };
 
@@ -372,6 +381,23 @@
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
             layers = <0>;
+        };
+
+        rctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 27>;
+            layers = <1>;
+        };
+
+        lsk_alt {
+            bindings = <&lsk LEFT_ALT>;
+            key-positions = <15 28>;
+            layers = <1>;
+        };
+
+        toggle_layer4 {
+            bindings = <&tog 4>;
+            key-positions = <38 28>;
         };
     };
 
@@ -389,10 +415,10 @@
 
         layer_1 {
             bindings = <
-&trans         &comp_euro   &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE                       &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
-&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &tog 4          &ht_kp_em 0 MINUS               &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &st_kp_scl 0 GRAVE
-&trans         &trans       &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET                       &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
-                                        &trans           &trans        &trans          &ht_kp LC(BACKSPACE) BACKSPACE  &mo 3                    &trans
+&trans         &comp_euro   &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE          &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp BACKSPACE
+&auto_fcb 0 0  &kp AT_SIGN  &kp HASH    &kp EXCLAMATION  &kp QUESTION  &trans          &ht_kp_em 0 MINUS  &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &st_kp_scl 0 GRAVE
+&trans         &trans       &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET          &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &trans
+                                        &trans           &trans        &trans          &trans             &mo 3                    &trans
             >;
         };
 
