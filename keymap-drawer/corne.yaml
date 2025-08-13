@@ -61,7 +61,7 @@ layers:
   - '#'
   - '!'
   - '?'
-  - {t: underscore_space, h: toggle}
+  - {t: ▽, type: trans}
   - {t: '-', h: '&comp_emdash'}
   - {t: '=', h: _}
   - (
@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: BACKSPACE, h: Ctl+BACKSPACE}
+  - {t: ▽, type: trans}
   - '3'
   - {t: ▽, type: trans}
   '2':
@@ -310,9 +310,17 @@ combos:
 - p: [2, 3]
   k: TAB
   l: [default]
-- p: [9, 10]
+- p: [18, 20]
   k: DELETE
   l: [default]
 - p: [26, 27]
   k: Ctl+C
   l: [default]
+- p: [16, 27]
+  k: LCTRL
+  l: ['1']
+- p: [15, 28]
+  k: {t: LEFT ALT, h: sticky}
+  l: ['1']
+- p: [38, 28]
+  k: {t: underscore_space, h: toggle}
