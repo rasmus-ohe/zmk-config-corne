@@ -398,11 +398,13 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <15 4>;
+            layers = <0>;
         };
 
         ctrl_delete {
             bindings = <&kp LC(DELETE)>;
             key-positions = <15 5>;
+            layers = <0>;
         };
     };
 
