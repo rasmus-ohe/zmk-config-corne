@@ -402,14 +402,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <text x="168" y="144" class="combo tap">Ctl+C</text>
 </g>
-<g class="combo combopos-18">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
@@ -789,14 +781,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g class="combo combopos-0">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-3">
@@ -996,14 +980,6 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">&amp;pswd</text>
 </g>
-<g class="combo combopos-1">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-underscore_space">
@@ -1177,14 +1153,6 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
-</g>
-<g class="combo combopos-0">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1374,14 +1342,6 @@ path.combo { stroke: #7f7f7f; }
 <a href="#qwerty">
 <text x="420" y="105" class="combo tap layer-activator">qwerty</text>
 </a><text x="420" y="116" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-1">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
-<a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

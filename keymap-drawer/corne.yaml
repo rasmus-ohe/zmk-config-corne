@@ -324,3 +324,4 @@ combos:
   l: ['1']
 - p: [38, 28]
   k: {t: underscore_space, h: toggle}
+  l: ['1']
