@@ -54,7 +54,7 @@ layers:
   - +
   - '['
   - ']'
-  - \
+  - {t: ▽, type: trans}
   - BACKSPACE
   - {t: '&fcb_single', h: '&fcb_full'}
   - '@'
@@ -66,7 +66,7 @@ layers:
   - {t: '=', h: _}
   - (
   - )
-  - /
+  - '|'
   - {t: '`', h: '&scl'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,7 +78,7 @@ layers:
   - '*'
   - '{'
   - '}'
-  - '|'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -322,9 +322,9 @@ combos:
 - p: [38, 28]
   k: {t: underscore_space, h: toggle}
   l: [default, underscore_space]
-- p: [15, 4]
+- p: [15, 5]
   k: DELETE
   l: [default]
-- p: [15, 5]
+- p: [15, 4]
   k: Ctl+DELETE
   l: [default]
