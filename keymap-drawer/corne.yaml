@@ -324,5 +324,7 @@ combos:
   l: [default, underscore_space]
 - p: [15, 4]
   k: DELETE
+  l: [default]
 - p: [15, 5]
   k: Ctl+DELETE
+  l: [default]
