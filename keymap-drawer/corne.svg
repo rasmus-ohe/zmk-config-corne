@@ -494,6 +494,20 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="481" y="101" width="28" height="26" class="combo"/>
 <text x="495" y="114" class="combo tap"><tspan style="font-size: 64%">&amp;w_computer</tspan></text>
 </g>
+<g class="combo combopos-32">
+<path d="M383,96 l-113,45" class="combo"/>
+<path d="M383,96 l355,9" class="combo"/>
+<path d="M383,96 l-225,-56" class="combo"/>
+<rect rx="6" ry="6" x="369" y="83" width="28" height="26" class="combo"/>
+<text x="383" y="96" class="combo tap">&amp;w_how</text>
+</g>
+<g class="combo combopos-33">
+<path d="M271,96 l-114,-53" class="combo"/>
+<path d="M271,96 l-168,8" class="combo"/>
+<path d="M271,96 l299,48" class="combo"/>
+<rect rx="6" ry="6" x="257" y="83" width="28" height="26" class="combo"/>
+<text x="271" y="96" class="combo tap">&amp;w_what</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
