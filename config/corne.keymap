@@ -237,8 +237,22 @@
         w_what: w_what {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp A &kp H &kp T>;
+            bindings = <&kp W &kp H &kp A &kp T>;
             label = "W_WHAT";
+        };
+
+        w_why: w_why {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp Y>;
+            label = "W_WHY";
+        };
+
+        w_when: w_when {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp E &kp N>;
+            label = "W_WHEN";
         };
     };
 
@@ -573,6 +587,18 @@
         word_what {
             bindings = <&w_what>;
             key-positions = <2 13 31>;
+            layers = <0>;
+        };
+
+        word_why {
+            bindings = <&w_why>;
+            key-positions = <2 31 9>;
+            layers = <0>;
+        };
+
+        word_when {
+            bindings = <&w_when>;
+            key-positions = <2 31 20>;
             layers = <0>;
         };
     };
