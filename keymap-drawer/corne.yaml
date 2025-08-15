@@ -347,13 +347,13 @@ combos:
   k: '&w_with'
   l: [default]
 - p: [13, 5, 22]
-  k: ''
+  k: '&w_about'
   l: [default]
 - p: [2, 31, 21]
-  k: ''
+  k: '&w_which'
   l: [default]
 - p: [13, 4, 7]
-  k: ''
+  k: '&w_laptop'
   l: [default]
 - p: [27, 22, 18]
   k: '&w_computer'

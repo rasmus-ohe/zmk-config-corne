@@ -472,18 +472,21 @@ path.combo { stroke: #7f7f7f; }
 <path d="M383,84 l-58,-33" class="combo"/>
 <path d="M383,84 l355,20" class="combo"/>
 <rect rx="6" ry="6" x="369" y="71" width="28" height="26" class="combo"/>
+<text x="383" y="84" class="combo tap"><tspan style="font-size: 88%">&amp;w_about</tspan></text>
 </g>
 <g class="combo combopos-29">
 <path d="M476,91 l-318,-53" class="combo"/>
 <path d="M476,91 l95,48" class="combo"/>
 <path d="M476,91 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="462" y="78" width="28" height="26" class="combo"/>
+<text x="476" y="91" class="combo tap"><tspan style="font-size: 88%">&amp;w_which</tspan></text>
 </g>
 <g class="combo combopos-30">
 <path d="M308,58 l-206,43" class="combo"/>
 <path d="M308,58 l-39,-16" class="combo"/>
 <path d="M308,58 l261,-22" class="combo"/>
 <rect rx="6" ry="6" x="294" y="45" width="28" height="26" class="combo"/>
+<text x="308" y="58" class="combo tap"><tspan style="font-size: 78%">&amp;w_laptop</tspan></text>
 </g>
 <g class="combo combopos-31">
 <path d="M495,114 l-280,24" class="combo"/>
