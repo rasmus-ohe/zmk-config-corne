@@ -227,13 +227,6 @@
             label = "Numbers: IP ";
         };
 
-        w_how: w_how {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp O &kp W>;
-            label = "W_HOW";
-        };
-
         w_what: w_what {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -253,6 +246,20 @@
             #binding-cells = <0>;
             bindings = <&kp W &kp H &kp E &kp N>;
             label = "W_WHEN";
+        };
+
+        w_who: w_who {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp O>;
+            label = "W_WHO";
+        };
+
+        w_how: w_how {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp O &kp W>;
+            label = "W_HOW";
         };
     };
 
@@ -520,43 +527,43 @@
 
         word_the {
             bindings = <&w_the>;
-            key-positions = <16 31 20>;
+            key-positions = <16 20>;
             layers = <0>;
         };
 
         word_and {
             bindings = <&w_and>;
-            key-positions = <13 19 28>;
+            key-positions = <13 28>;
             layers = <0>;
         };
 
         word_have {
             bindings = <&w_have>;
-            key-positions = <13 29 31>;
+            key-positions = <31 29>;
             layers = <0>;
         };
 
         word_that {
             bindings = <&w_that>;
-            key-positions = <16 13 31>;
+            key-positions = <16 13>;
             layers = <0>;
         };
 
         w_with {
             bindings = <&w_with>;
-            key-positions = <2 16 21>;
+            key-positions = <2 16>;
             layers = <0>;
         };
 
         word_about {
             bindings = <&w_about>;
-            key-positions = <13 5 22>;
+            key-positions = <13 5>;
             layers = <0>;
         };
 
         word_which {
             bindings = <&w_which>;
-            key-positions = <2 31 21>;
+            key-positions = <2 21>;
             layers = <0>;
         };
 
@@ -578,27 +585,33 @@
             layers = <2>;
         };
 
-        word_how {
-            bindings = <&w_how>;
-            key-positions = <28 22 2>;
-            layers = <0>;
-        };
-
         word_what {
             bindings = <&w_what>;
-            key-positions = <2 13 31>;
+            key-positions = <2 13>;
             layers = <0>;
         };
 
         word_why {
             bindings = <&w_why>;
-            key-positions = <2 31 9>;
+            key-positions = <2 9>;
             layers = <0>;
         };
 
         word_when {
             bindings = <&w_when>;
-            key-positions = <2 31 20>;
+            key-positions = <2 20>;
+            layers = <0>;
+        };
+
+        word_who {
+            bindings = <&w_who>;
+            key-positions = <2 22>;
+            layers = <0>;
+        };
+
+        c_y {
+            bindings = <&kp Y>;
+            key-positions = <13 17>;
             layers = <0>;
         };
     };
