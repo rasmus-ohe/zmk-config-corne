@@ -614,6 +614,12 @@
             key-positions = <13 17>;
             layers = <0>;
         };
+
+        c_I {
+            bindings = <&kp LS(I)>;
+            key-positions = <15 21>;
+            layers = <0>;
+        };
     };
 
     keymap {
