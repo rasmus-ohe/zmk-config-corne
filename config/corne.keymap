@@ -149,6 +149,83 @@
             bindings = <&kp LT &kp GT &kp LEFT>;
             label = "Auto Angled Brackets";
         };
+
+        w_im: w_im {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp SQT &kp M>;
+            label = "Word I'm";
+        };
+
+        w_the: w_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "W_THE";
+        };
+
+        w_and: w_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "W_AND";
+        };
+
+        w_have: w_have {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A &kp V &kp E>;
+            label = "W_HAVE";
+        };
+
+        w_that: w_that {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp A &kp T>;
+            label = "W_THAT";
+        };
+
+        w_with: w_with {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp I &kp T &kp H>;
+            label = "W_WITH";
+        };
+
+        w_about: w_about {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp B &kp O &kp U &kp T>;
+            label = "W_ABOUT";
+        };
+
+        w_which: w_which {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &kp I &kp C &kp H>;
+            label = "W_WHICH";
+        };
+
+        w_laptop: w_laptop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp A &kp P &kp T &kp O &kp P>;
+            label = "W_LAPTOP";
+        };
+
+        w_computer: w_computer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp M &kp P &kp U &kp T &kp E &kp R>;
+            label = "W_COMPUTER";
+        };
+
+        n_ip: n_ip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8 &kp DOT>;
+            label = "Numbers: IP ";
+        };
     };
 
     behaviors {
@@ -405,6 +482,72 @@
             bindings = <&kp LC(DELETE)>;
             key-positions = <15 4>;
             layers = <0>;
+        };
+
+        word_im {
+            bindings = <&w_im>;
+            key-positions = <18 21>;
+            layers = <0>;
+        };
+
+        word_the {
+            bindings = <&w_the>;
+            key-positions = <16 31 20>;
+            layers = <0>;
+        };
+
+        word_and {
+            bindings = <&w_and>;
+            key-positions = <13 19 28>;
+            layers = <0>;
+        };
+
+        word_have {
+            bindings = <&w_have>;
+            key-positions = <13 29 31>;
+            layers = <0>;
+        };
+
+        word_that {
+            bindings = <&w_that>;
+            key-positions = <16 13 31>;
+            layers = <0>;
+        };
+
+        w_with {
+            bindings = <&w_with>;
+            key-positions = <2 16 21>;
+            layers = <0>;
+        };
+
+        word_about {
+            bindings = <&none>;
+            key-positions = <13 5 22>;
+            layers = <0>;
+        };
+
+        word_which {
+            bindings = <&none>;
+            key-positions = <2 31 21>;
+            layers = <0>;
+        };
+
+        word_laptop {
+            bindings = <&none>;
+            key-positions = <13 4 7>;
+            layers = <0>;
+        };
+
+        word_computer {
+            bindings = <&w_computer>;
+            key-positions = <27 22 18>;
+            layers = <0>;
+        };
+
+        number_ip {
+            bindings = <&n_ip>;
+            key-positions = <13 14 28>;
+            layers = <2>;
         };
     };
 
