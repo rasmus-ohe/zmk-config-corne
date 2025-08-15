@@ -226,6 +226,20 @@
             bindings = <&kp N1 &kp N9 &kp N2 &kp DOT &kp N1 &kp N6 &kp N8 &kp DOT>;
             label = "Numbers: IP ";
         };
+
+        w_how: w_how {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp O &kp W>;
+            label = "W_HOW";
+        };
+
+        w_what: w_what {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp H &kp T>;
+            label = "W_WHAT";
+        };
     };
 
     behaviors {
@@ -548,6 +562,18 @@
             bindings = <&n_ip>;
             key-positions = <13 14 28>;
             layers = <2>;
+        };
+
+        word_how {
+            bindings = <&w_how>;
+            key-positions = <28 22 2>;
+            layers = <0>;
+        };
+
+        word_what {
+            bindings = <&w_what>;
+            key-positions = <2 13 31>;
+            layers = <0>;
         };
     };
 
