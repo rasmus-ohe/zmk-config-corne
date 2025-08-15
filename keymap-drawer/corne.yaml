@@ -328,3 +328,36 @@ combos:
 - p: [15, 4]
   k: Ctl+DELETE
   l: [default]
+- p: [18, 21]
+  k: '&w_im'
+  l: [default]
+- p: [16, 31, 20]
+  k: '&w_the'
+  l: [default]
+- p: [13, 19, 28]
+  k: '&w_and'
+  l: [default]
+- p: [13, 29, 31]
+  k: '&w_have'
+  l: [default]
+- p: [16, 13, 31]
+  k: '&w_that'
+  l: [default]
+- p: [2, 16, 21]
+  k: '&w_with'
+  l: [default]
+- p: [13, 5, 22]
+  k: ''
+  l: [default]
+- p: [2, 31, 21]
+  k: ''
+  l: [default]
+- p: [13, 4, 7]
+  k: ''
+  l: [default]
+- p: [27, 22, 18]
+  k: '&w_computer'
+  l: [default]
+- p: [13, 14, 28]
+  k: '&n_ip'
+  l: ['2']
