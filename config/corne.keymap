@@ -521,19 +521,19 @@
         };
 
         word_about {
-            bindings = <&none>;
+            bindings = <&w_about>;
             key-positions = <13 5 22>;
             layers = <0>;
         };
 
         word_which {
-            bindings = <&none>;
+            bindings = <&w_which>;
             key-positions = <2 31 21>;
             layers = <0>;
         };
 
         word_laptop {
-            bindings = <&none>;
+            bindings = <&w_laptop>;
             key-positions = <13 4 7>;
             layers = <0>;
         };
