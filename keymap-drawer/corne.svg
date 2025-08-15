@@ -516,6 +516,12 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="182" y="88" width="28" height="26" class="combo"/>
 <text x="196" y="102" class="combo tap">Y</text>
 </g>
+<g class="combo combopos-37">
+<path d="M448,88 l-233,-3" class="combo"/>
+<path d="M448,88 l233,3" class="combo"/>
+<rect rx="6" ry="6" x="434" y="74" width="28" height="26" class="combo"/>
+<text x="448" y="88" class="combo tap">Sft+I</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">

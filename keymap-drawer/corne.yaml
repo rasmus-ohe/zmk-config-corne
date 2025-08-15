@@ -376,3 +376,6 @@ combos:
 - p: [13, 17]
   k: Y
   l: [default]
+- p: [15, 21]
+  k: Sft+I
+  l: [default]
