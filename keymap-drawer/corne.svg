@@ -508,6 +508,20 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="257" y="83" width="28" height="26" class="combo"/>
 <text x="271" y="96" class="combo tap">&amp;w_what</text>
 </g>
+<g class="combo combopos-34">
+<path d="M476,72 l-317,-35" class="combo"/>
+<path d="M476,72 l96,64" class="combo"/>
+<path d="M476,72 l206,-34" class="combo"/>
+<rect rx="6" ry="6" x="462" y="59" width="28" height="26" class="combo"/>
+<text x="476" y="72" class="combo tap">&amp;w_why</text>
+</g>
+<g class="combo combopos-35">
+<path d="M457,89 l-299,-51" class="combo"/>
+<path d="M457,89 l114,51" class="combo"/>
+<path d="M457,89 l168,-4" class="combo"/>
+<rect rx="6" ry="6" x="443" y="76" width="28" height="26" class="combo"/>
+<text x="457" y="89" class="combo tap">&amp;w_when</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">

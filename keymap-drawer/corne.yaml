@@ -367,3 +367,9 @@ combos:
 - p: [2, 13, 31]
   k: '&w_what'
   l: [default]
+- p: [2, 31, 9]
+  k: '&w_why'
+  l: [default]
+- p: [2, 31, 20]
+  k: '&w_when'
+  l: [default]
