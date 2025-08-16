@@ -408,12 +408,13 @@ path.combo { stroke: #7f7f7f; }
 <text x="224" y="126" class="combo hold">sticky</text>
 </g>
 <g class="combo combopos-19">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
+<path d="M528,170 l-159,48" class="combo"/>
+<path d="M528,170 l43,-17" class="combo"/>
+<path d="M528,170 l98,-26" class="combo"/>
+<rect rx="6" ry="6" x="514" y="157" width="28" height="26" class="combo"/>
 <a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
+<text x="528" y="170" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
+</a><text x="528" y="181" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-20">
 <path d="M252,63 l-39,14" class="combo"/>
@@ -1268,12 +1269,13 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M302,186 l35,27" class="combo"/>
-<path d="M302,186 l-35,-27" class="combo"/>
-<rect rx="6" ry="6" x="288" y="173" width="28" height="26" class="combo"/>
+<path d="M528,170 l-159,48" class="combo"/>
+<path d="M528,170 l43,-17" class="combo"/>
+<path d="M528,170 l98,-26" class="combo"/>
+<rect rx="6" ry="6" x="514" y="157" width="28" height="26" class="combo"/>
 <a href="#underscore_space">
-<text x="302" y="186" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
-</a><text x="302" y="197" class="combo hold">toggle</text>
+<text x="528" y="170" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
+</a><text x="528" y="181" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
