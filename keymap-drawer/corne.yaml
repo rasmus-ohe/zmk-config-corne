@@ -379,3 +379,6 @@ combos:
 - p: [15, 21]
   k: Sft+I
   l: [default]
+- p: [31, 2]
+  k: '&w_how'
+  l: [default]
