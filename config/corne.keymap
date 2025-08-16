@@ -620,6 +620,12 @@
             key-positions = <15 21>;
             layers = <0>;
         };
+
+        word_how {
+            bindings = <&w_how>;
+            key-positions = <31 2>;
+            layers = <0>;
+        };
     };
 
     keymap {
