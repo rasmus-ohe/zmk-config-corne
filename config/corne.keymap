@@ -630,6 +630,7 @@
         lalt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <1 4>;
+            layers = <0>;
         };
     };
 
