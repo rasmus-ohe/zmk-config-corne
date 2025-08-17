@@ -529,6 +529,14 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
 <text x="364" y="91" class="combo tap">&amp;w_how</text>
 </g>
+<g class="combo combopos-39">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
@@ -705,6 +713,14 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -894,6 +910,14 @@ path.combo { stroke: #7f7f7f; }
 <path d="M159,114 l76,27" class="combo"/>
 <rect rx="6" ry="6" x="145" y="101" width="28" height="26" class="combo"/>
 <text x="159" y="114" class="combo tap">&amp;n_ip</text>
+</g>
+<g class="combo combopos-1">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1094,6 +1118,14 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">&amp;pswd</text>
 </g>
+<g class="combo combopos-1">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-underscore_space">
@@ -1276,6 +1308,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#underscore_space">
 <text x="528" y="170" class="combo tap layer-activator"><tspan style="font-size: 64%">underscore…</tspan></text>
 </a><text x="528" y="181" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1465,6 +1505,14 @@ path.combo { stroke: #7f7f7f; }
 <a href="#qwerty">
 <text x="420" y="105" class="combo tap layer-activator">qwerty</text>
 </a><text x="420" y="116" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-1">
+<path d="M168,42 l-65,5" class="combo"/>
+<path d="M168,42 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="29" width="28" height="26" class="combo"/>
+<text x="168" y="42" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>

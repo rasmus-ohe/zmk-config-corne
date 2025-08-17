@@ -382,3 +382,5 @@ combos:
 - p: [31, 2]
   k: '&w_how'
   l: [default]
+- p: [1, 4]
+  k: LEFT ALT
