@@ -69,7 +69,7 @@ layers:
   - '|'
   - {t: '`', h: '&scl'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PRINTSCREEN
   - CUT
   - COPY
   - PASTE
@@ -93,12 +93,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PRINTSCREEN
-  - '&comp_o_a'
-  - '&comp_uml_a'
-  - '&comp_uml_o'
-  - {t: DELETE, h: Ctl+DELETE}
-  - BSPC
+  - '&mkp LCLK'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp RCLK'
   - LCTRL
   - '1'
   - '2'
@@ -136,12 +136,12 @@ layers:
   - Meh+F3
   - POWER
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
   - F11
   - F1
   - F2
@@ -283,7 +283,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '2'}
@@ -298,8 +298,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
 combos:
 - p: [12, 23]
@@ -428,6 +428,21 @@ combos:
 - p: [1, 4]
   k: LEFT ALT
   l: [default]
+- p: [22, 13]
+  k: '&comp_o_a'
+  l: [default]
+- p: [13, 23]
+  k: '&comp_uml_a'
+  l: [default]
+- p: [22, 12]
+  k: '&comp_uml_o'
+  l: [default]
+- p: [6, 11]
+  k: '&mkp MCLK'
+  l: ['2']
 - p: [39, 40]
-  k: {t: Bluetooth control, h: toggle}
-  l: [default, Bluetooth control]
+  k: {t: Bluetooth control, h: sticky}
+  l: [default]
+- p: [37, 38]
+  k: {t: Bluetooth control, h: sticky}
+  l: [default]
