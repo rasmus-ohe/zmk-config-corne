@@ -262,6 +262,27 @@
             bindings = <&kp H &kp O &kp W>;
             label = "W_HOW";
         };
+
+        w_this: w_this {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp I &kp S>;
+            label = "W_THIS";
+        };
+
+        w_should: w_should {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H &kp O &kp U &kp L &kp D>;
+            label = "W_SHOULD";
+        };
+
+        w_would: w_would {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp O &kp U &kp L &kp D>;
+            label = "W_WOULD";
+        };
     };
 
     behaviors {
@@ -376,6 +397,15 @@
             #binding-cells = <1>;
             lazy;
             release-after-ms = <2000>;
+        };
+
+        qsk: qsk {
+            compatible = "zmk,behavior-sticky-key";
+            label = "Quick-relase Sticky Key";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <1500>;
         };
     };
 
@@ -665,8 +695,26 @@
         };
 
         sticky_shift {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&qsk LEFT_SHIFT>;
             key-positions = <15 20>;
+            layers = <0>;
+        };
+
+        word_this {
+            bindings = <&w_this>;
+            key-positions = <16 21>;
+            layers = <0>;
+        };
+
+        word_should {
+            bindings = <&w_should>;
+            key-positions = <15 22>;
+            layers = <0>;
+        };
+
+        word_would {
+            bindings = <&w_would>;
+            key-positions = <2 8>;
             layers = <0>;
         };
     };
