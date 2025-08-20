@@ -84,7 +84,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '3'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
   - ESCAPE
@@ -124,7 +124,7 @@ layers:
   - FORWARD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '3'
+  - {t: ▽, type: trans}
   - LEFT ALT
   - {t: ▽, type: trans}
   - {type: held}
@@ -215,49 +215,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  qwerty:
-  - {t: ▽, type: trans}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: A, h: LGUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT SHIFT}
-  - {t: F, h: LCTRL}
-  - G
-  - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RIGHT SHIFT}
-  - {t: L, h: LEFT ALT}
-  - {t: ':', h: ;}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Bluetooth control:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -302,9 +259,6 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
 combos:
-- p: [12, 23]
-  k: {t: qwerty, h: toggle}
-  l: [qwerty, default]
 - p: [9, 22]
   k: '&you'
   l: [default]
