@@ -405,7 +405,7 @@
             bindings = <&kp>;
             #binding-cells = <1>;
             quick-release;
-            release-after-ms = <1500>;
+            release-after-ms = <3000>;
         };
     };
 
@@ -715,6 +715,12 @@
         word_would {
             bindings = <&w_would>;
             key-positions = <2 8>;
+            layers = <0>;
+        };
+
+        toggle_shift {
+            bindings = <&kt LEFT_SHIFT>;
+            key-positions = <24 35>;
             layers = <0>;
         };
     };
