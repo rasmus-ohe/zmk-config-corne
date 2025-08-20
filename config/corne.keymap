@@ -283,6 +283,20 @@
             bindings = <&kp W &kp O &kp U &kp L &kp D>;
             label = "W_WOULD";
         };
+
+        adq: adq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT &kp LEFT>;
+            label = "Automatic Double Quote";
+        };
+
+        asq: asq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SQT &kp LEFT>;
+            label = "Automatic Single Quote";
+        };
     };
 
     behaviors {
@@ -406,6 +420,24 @@
             #binding-cells = <1>;
             quick-release;
             release-after-ms = <3000>;
+        };
+
+        ht_adq_kp: ht_adq_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Tap - Key Press - Auto Doube Quote";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&adq>, <&kp>;
+        };
+
+        ht_asq_kp: ht_asq_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Tap - Auto Single Quotatoin - Key Press";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&asq>, <&kp>;
         };
     };
 
@@ -725,7 +757,7 @@
         };
 
         double_quotes {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&ht_adq_kp 0 DOUBLE_QUOTES>;
             key-positions = <12 23>;
             layers = <0>;
         };
@@ -737,7 +769,7 @@
         default_layer {
             bindings = <
 &ht_kp ESCAPE TAB  &kp Q  &kp W  &kp F              &kp P  &kp B                          &kp J                         &kp L  &kp U               &kp Y    &ht_kp SEMICOLON COLON  &kp LC(BACKSPACE)
-&kp SQT            &kp A  &kp R  &hml LEFT_SHIFT S  &kp T  &kp G                          &kp M                         &kp N  &hmr RIGHT_SHIFT E  &kp I    &kp O                   &kp SQT
+&ht_asq_kp 0 SQT   &kp A  &kp R  &hml LEFT_SHIFT S  &kp T  &kp G                          &kp M                         &kp N  &hmr RIGHT_SHIFT E  &kp I    &kp O                   &ht_asq_kp 0 SQT
 &scw               &kp Z  &kp X  &kp C              &kp D  &kp V                          &kp K                         &kp H  &kp COMMA           &kp DOT  &ht_kp BACKSLASH SLASH  &scw
                                  &kp LEFT_GUI       &mo 1  &ht_kp_hwu LEFT_SHIFT SPACE    &ht_kp_hwu RIGHT_SHIFT ENTER  &mo 2  &kp LCTRL
             >;
