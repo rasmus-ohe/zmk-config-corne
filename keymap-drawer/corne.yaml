@@ -13,7 +13,7 @@ layers:
   - Y
   - {t: ':', h: ;}
   - Ctl+BACKSPACE
-  - ''''
+  - {t: '''', h: '&asq'}
   - A
   - R
   - {t: S, h: LEFT SHIFT}
@@ -24,7 +24,7 @@ layers:
   - {t: E, h: RIGHT SHIFT}
   - I
   - O
-  - ''''
+  - {t: '''', h: '&asq'}
   - '&scw'
   - Z
   - X
@@ -416,5 +416,5 @@ combos:
   k: {t: LEFT SHIFT, h: toggle}
   l: [default]
 - p: [12, 23]
-  k: '"'
+  k: {t: '"', h: '&adq'}
   l: [default]
