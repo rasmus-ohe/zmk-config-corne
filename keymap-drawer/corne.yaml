@@ -400,3 +400,6 @@ combos:
 - p: [37, 38]
   k: {t: Bluetooth control, h: sticky}
   l: [default]
+- p: [15, 20]
+  k: {t: LEFT SHIFT, h: sticky}
+  l: [default]
