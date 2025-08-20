@@ -403,3 +403,12 @@ combos:
 - p: [15, 20]
   k: {t: LEFT SHIFT, h: sticky}
   l: [default]
+- p: [16, 21]
+  k: '&w_this'
+  l: [default]
+- p: [15, 22]
+  k: '&w_should'
+  l: [default]
+- p: [2, 8]
+  k: '&w_would'
+  l: [default]

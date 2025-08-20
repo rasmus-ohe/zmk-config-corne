@@ -572,6 +572,24 @@ path.combo { stroke: #7f7f7f; }
 </text>
 <text x="420" y="95" class="combo hold">sticky</text>
 </g>
+<g class="combo combopos-45">
+<path d="M476,91 l-205,0" class="combo"/>
+<path d="M476,91 l205,0" class="combo"/>
+<rect rx="6" ry="6" x="462" y="78" width="28" height="26" class="combo"/>
+<text x="476" y="91" class="combo tap">&amp;w_this</text>
+</g>
+<g class="combo combopos-46">
+<path d="M476,94 l-261,-10" class="combo"/>
+<path d="M476,94 l261,10" class="combo"/>
+<rect rx="6" ry="6" x="462" y="82" width="28" height="26" class="combo"/>
+<text x="476" y="94" class="combo tap"><tspan style="font-size: 78%">&amp;w_should</tspan></text>
+</g>
+<g class="combo combopos-47">
+<path d="M392,32 l-233,3" class="combo"/>
+<path d="M392,32 l233,-3" class="combo"/>
+<rect rx="6" ry="6" x="378" y="18" width="28" height="26" class="combo"/>
+<text x="392" y="32" class="combo tap"><tspan style="font-size: 88%">&amp;w_would</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
