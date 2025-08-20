@@ -415,3 +415,6 @@ combos:
 - p: [24, 35]
   k: {t: LEFT SHIFT, h: toggle}
   l: [default]
+- p: [12, 23]
+  k: '"'
+  l: [default]

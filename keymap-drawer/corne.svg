@@ -599,6 +599,12 @@ path.combo { stroke: #7f7f7f; }
 </text>
 <text x="420" y="172" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-49">
+<path d="M420,105 l-373,0" class="combo"/>
+<path d="M420,105 l373,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="92" width="28" height="26" class="combo"/>
+<text x="420" y="105" class="combo tap">&quot;</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-1">
