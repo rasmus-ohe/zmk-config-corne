@@ -382,12 +382,6 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle_qwerty {
-            bindings = <&tog 5>;
-            key-positions = <12 23>;
-            layers = <5 0>;
-        };
-
         you_combo {
             bindings = <&you>;
             key-positions = <9 22>;
@@ -658,14 +652,14 @@
             layers = <2>;
         };
 
-        sticky_layer_6_right {
-            bindings = <&sl 6>;
+        sticky_layer_bt_right {
+            bindings = <&sl 5>;
             key-positions = <39 40>;
             layers = <0>;
         };
 
-        sticky_layer_6_left {
-            bindings = <&sl 6>;
+        sticky_layer_bt_left {
+            bindings = <&sl 5>;
             key-positions = <37 38>;
             layers = <0>;
         };
@@ -688,7 +682,7 @@
 &trans         &comp_euro       &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans          &kp TILDE          &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp BACKSPACE
 &auto_fcb 0 0  &kp AT_SIGN      &kp HASH    &kp EXCLAMATION  &kp QUESTION  &trans          &ht_kp_em 0 MINUS  &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &st_kp_scl 0 GRAVE
 &trans         &kp PRINTSCREEN  &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK    &kp CARET          &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
-                                            &trans           &trans        &trans          &trans             &mo 3                    &trans
+                                            &trans           &trans        &trans          &trans             &trans                   &trans
             >;
         };
 
@@ -703,7 +697,7 @@
 &kp ESCAPE  &comp_degree  &trans  &trans  &trans  &trans          &mkp LCLK   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp RCLK
 &kp LCTRL   &kp N1        &kp N2  &kp N3  &kp N4  &kp N5          &kp HOME    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp END
 &trans      &kp N6        &kp N7  &kp N8  &kp N9  &kp N0          &kp INSERT  &kp K_BACK      &kp PAGE_DOWN   &kp PG_UP     &kp K_FORWARD    &trans
-                                  &trans  &mo 3   &kp LEFT_ALT    &trans      &trans          &trans
+                                  &trans  &trans  &kp LEFT_ALT    &trans      &trans          &trans
             >;
         };
 
@@ -725,15 +719,6 @@
             >;
         };
 
-        qwerty {
-            bindings = <
-&trans  &kp Q        &kp W            &kp E              &kp R         &kp T     &kp Y   &kp U         &kp I               &kp O            &kp P              &trans
-&trans  &hml LGUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G     &kp H   &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr LEFT_ALT L  &ht_kp SEMI COLON  &trans
-&trans  &kp Z        &kp X            &kp C              &kp V         &kp B     &kp N   &kp M         &kp COMMA           &kp DOT          &kp FSLH           &trans
-                                      &trans             &trans        &trans    &trans  &trans        &trans
-            >;
-        };
-
         bt {
             bindings = <
 &trans          &trans         &sys_reset     &bootloader    &trans         &trans           &trans  &trans  &bootloader  &sys_reset  &trans  &trans
@@ -743,6 +728,15 @@
             >;
 
             label = "Bluetooth control";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        layer-ception {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
