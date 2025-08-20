@@ -723,6 +723,12 @@
             key-positions = <24 35>;
             layers = <0>;
         };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <12 23>;
+            layers = <0>;
+        };
     };
 
     keymap {
