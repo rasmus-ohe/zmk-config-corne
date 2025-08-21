@@ -71,7 +71,7 @@ layers:
   - {t: ▽, type: trans}
   - PRINTSCREEN
   - CUT
-  - COPY
+  - {t: COPY, h: Y}
   - PASTE
   - CAPSLOCK
   - ^
@@ -388,7 +388,7 @@ combos:
   k: Ctl+S
   l: [default]
 - p: [13, 14]
-  k: Ctl+A
+  k: {t: Ctl+A, h: '&vsa'}
   l: [default]
 - p: [2, 3]
   k: TAB
@@ -488,7 +488,7 @@ combos:
   l: [default]
 - p: [15, 20]
   k: {t: LEFT SHIFT, h: sticky}
-  l: [default]
+  l: [default, underscore_space]
 - p: [16, 21]
   k: '&w_this'
   l: [default]
@@ -500,7 +500,7 @@ combos:
   l: [default]
 - p: [24, 35]
   k: {t: LEFT SHIFT, h: toggle}
-  l: [default]
+  l: [default, underscore_space]
 - p: [12, 23]
   k: {t: '"', h: '&adq'}
   l: [default]
