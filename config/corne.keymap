@@ -297,6 +297,13 @@
             bindings = <&kp SQT &kp SQT &kp LEFT>;
             label = "Automatic Single Quote";
         };
+
+        vsa: vim_select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp G &kp LS(V) &kp LS(G)>;
+            label = "Vim Select All";
+        };
     };
 
     behaviors {
@@ -424,7 +431,7 @@
 
         ht_adq_kp: ht_adq_kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "Hold Tap - Key Press - Auto Doube Quote";
+            label = "Hold Tap - Auto Doube Quote - Key Press";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
@@ -438,6 +445,15 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
             bindings = <&asq>, <&kp>;
+        };
+
+        ht_vsa_kp: ht_vsa_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Tap - Vim Select All - Key Press";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&vsa>, <&kp>;
         };
     };
 
@@ -529,7 +545,7 @@
         };
 
         select_all {
-            bindings = <&kp LC(A)>;
+            bindings = <&ht_vsa_kp 0 LC(A)>;
             key-positions = <13 14>;
             layers = <0>;
         };
@@ -729,7 +745,7 @@
         sticky_shift {
             bindings = <&qsk LEFT_SHIFT>;
             key-positions = <15 20>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         word_this {
@@ -753,7 +769,7 @@
         toggle_shift {
             bindings = <&kt LEFT_SHIFT>;
             key-positions = <24 35>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         double_quotes {
@@ -779,7 +795,7 @@
             bindings = <
 &trans         &comp_euro       &kp DOLLAR  &kp AMPERSAND    &kp PERCENT   &trans                    &kp TILDE          &kp PLUS                 &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp BACKSPACE
 &auto_fcb 0 0  &kp AT_SIGN      &kp HASH    &kp EXCLAMATION  &kp QUESTION  &ht_kp LS(LG(O)) LG(O)    &ht_kp_em 0 MINUS  &ht_kp UNDERSCORE EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &st_kp_scl 0 GRAVE
-&trans         &kp PRINTSCREEN  &kp K_CUT   &kp K_COPY       &kp K_PASTE   &kp CAPSLOCK              &kp CARET          &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
+&trans         &kp PRINTSCREEN  &kp K_CUT   &ht_kp Y K_COPY  &kp K_PASTE   &kp CAPSLOCK              &kp CARET          &kp ASTERISK             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
                                             &trans           &trans        &trans                    &trans             &trans                   &trans
             >;
         };
