@@ -61,7 +61,7 @@ layers:
   - '#'
   - '!'
   - '?'
-  - {t: ▽, type: trans}
+  - {t: Gui+O, h: Sft+Gui+O}
   - {t: '-', h: '&comp_emdash'}
   - {t: '=', h: _}
   - (
