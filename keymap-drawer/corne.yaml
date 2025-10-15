@@ -16,12 +16,12 @@ layers:
   - {t: '''', h: '&asq'}
   - A
   - R
-  - {t: S, h: LEFT SHIFT}
+  - S
   - T
   - G
   - M
   - N
-  - {t: E, h: RIGHT SHIFT}
+  - E
   - I
   - O
   - {t: '''', h: '&asq'}
@@ -398,9 +398,6 @@ combos:
   l: [default]
 - p: [16, 27]
   k: LCTRL
-  l: [default]
-- p: [15, 28]
-  k: {t: LEFT ALT, h: sticky}
   l: [default]
 - p: [38, 31, 32]
   k: {t: underscore_space, h: toggle}
