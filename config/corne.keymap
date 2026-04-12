@@ -535,12 +535,6 @@
             layers = <0>;
         };
 
-        rctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <16 27>;
-            layers = <0>;
-        };
-
         toggle_layer4 {
             bindings = <&tog 4>;
             key-positions = <38 31 32>;
@@ -609,18 +603,6 @@
             layers = <0>;
         };
 
-        word_laptop {
-            bindings = <&w_laptop>;
-            key-positions = <13 4 7>;
-            layers = <0>;
-        };
-
-        word_computer {
-            bindings = <&w_computer>;
-            key-positions = <27 22 18>;
-            layers = <0>;
-        };
-
         number_ip {
             bindings = <&n_ip>;
             key-positions = <13 14 28>;
@@ -667,12 +649,6 @@
         word_how {
             bindings = <&w_how>;
             key-positions = <31 2>;
-            layers = <0>;
-        };
-
-        lalt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <1 4>;
             layers = <0>;
         };
 
@@ -746,6 +722,26 @@
             bindings = <&ht_adq_kp 0 DOUBLE_QUOTES>;
             key-positions = <12 23>;
             layers = <0>;
+        };
+
+        lalt_l {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <1 4>;
+        };
+
+        lalt_r {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <7 10>;
+        };
+
+        ctrl_l {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 27>;
+        };
+
+        ctrl_r {
+            bindings = <&kp LCTRL>;
+            key-positions = <19 32>;
         };
     };
 
