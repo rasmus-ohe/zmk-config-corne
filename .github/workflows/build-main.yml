@@ -1,4 +1,4 @@
-name: Build ZMK firmware
+name: Build ZMK firmware (main)
 on:
   workflow_dispatch: # can be triggered manually
   push:
@@ -18,6 +18,10 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: firmware
+          path: firmware/
+
+      - name: Zip firmware
+        run: zip -r firmware.zip firmware/
 
       - name: Get current date
         id: date
