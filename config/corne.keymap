@@ -523,12 +523,6 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
         stop_command {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
@@ -742,6 +736,16 @@
         ctrl_r {
             bindings = <&kp LCTRL>;
             key-positions = <19 32>;
+        };
+
+        tab_l {
+            bindings = <&kp TAB>;
+            key-positions = <2 3>;
+        };
+
+        tab_r {
+            bindings = <&kp TAB>;
+            key-positions = <8 9>;
         };
     };
 
