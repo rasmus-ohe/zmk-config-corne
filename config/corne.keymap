@@ -787,7 +787,7 @@
 
         layer_3 {
             bindings = <
-&to 6    &trans  &kp LS(LC(LA(F2)))  &kp LA(LS(LC(F3)))  &kp K_POWER  &trans     &trans            &msc SCRL_LEFT  &msc SCRL_DOWN        &msc SCRL_UP          &msc SCRL_RIGHT       &trans
+&trans   &trans  &kp LS(LC(LA(F2)))  &kp LA(LS(LC(F3)))  &kp K_POWER  &trans     &trans            &msc SCRL_LEFT  &msc SCRL_DOWN        &msc SCRL_UP          &msc SCRL_RIGHT       &trans
 &kp F11  &kp F1  &kp F2              &kp F3              &kp F4       &kp F5     &kp C_PLAY_PAUSE  &kp C_PREV      &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT            &kp K_MUTE
 &kp F12  &kp F6  &kp F7              &kp F8              &kp F9       &kp F10    &trans            &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &desktop_secrets 0 0  &laptop_secrets 0 0
                                      &trans              &trans       &trans     &trans            &trans          &trans
@@ -812,28 +812,6 @@
             >;
 
             label = "Bluetooth control";
-        };
-
-        gaming_layer {
-            bindings = <
-&kp TAB        &kp M           &kp Q  &kp W         &kp E  &kp R        &none  &none  &none  &none  &none  &none
-&kp LCTRL      &kp LEFT_SHIFT  &kp A  &kp S         &kp D  &kp F        &none  &none  &none  &none  &none  &none
-&kp BACKSPACE  &kp Z           &kp X  &kp C         &kp V  &none        &none  &none  &none  &none  &none  &none
-                                      &kp LEFT_ALT  &mo 7  &kp SPACE    &none  &to 0  &none
-            >;
-
-            label = "Gaming keys";
-        };
-
-        gaming_layer_extra {
-            bindings = <
-&trans  &kp N1  &kp N2  &kt LS(W)  &kp PG_UP  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp B   &kp K      &kp L      &kt F     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kt W      &kp PG_DN  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans     &trans     &trans    &trans  &trans  &trans
-            >;
-
-            label = "Extra gaming keys";
         };
     };
 
