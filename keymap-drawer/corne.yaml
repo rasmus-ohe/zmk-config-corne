@@ -390,9 +390,6 @@ combos:
 - p: [13, 14]
   k: {t: Ctl+A, h: '&vsa'}
   l: [default]
-- p: [2, 3]
-  k: TAB
-  l: [default]
 - p: [26, 27]
   k: Ctl+C
   l: [default]
@@ -497,3 +494,7 @@ combos:
   k: LCTRL
 - p: [19, 32]
   k: LCTRL
+- p: [2, 3]
+  k: TAB
+- p: [8, 9]
+  k: TAB
