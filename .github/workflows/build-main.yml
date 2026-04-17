@@ -1,0 +1,27 @@
+name: Build ZMK firmware
+on:
+  workflow_dispatch: # can be triggered manually
+  push:
+    branches: [master]
+    paths: ["config/*.keymap"]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: firmware
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ github.event.head_commit.timestamp | date('YYYY.MM.DD') }}
+          body: ${{ github.event.head_commit.message }}
+          files: firmware.zip
